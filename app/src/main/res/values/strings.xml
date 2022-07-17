@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Skripsi Masjid</string>
+    <string name="home">Beranda</string>
+    <string name="news_info">Info Terbaru</string>
+    <string name="profile">Profil</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_dashboard">Masjid al Mujahidin Selong</string>
+    <string name="idea">Al Quran</string>
+    <string name="suggestion">Doa</string>
+    <string name="medical">Tasbiih</string>
+    <string name="career"><![CDATA[Zikir Pagi & Petang]]></string>
+</resources>

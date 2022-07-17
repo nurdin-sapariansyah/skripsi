@@ -1,0 +1,2 @@
+rootProject.name = "Skripsi Masjid"
+include ':app'
