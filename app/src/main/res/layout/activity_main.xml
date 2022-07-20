@@ -37,6 +37,7 @@
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/quran_menu"
                 android:layout_width="170dp"
                 android:layout_height="170dp"
                 android:layout_margin="10dp"
@@ -71,6 +72,7 @@
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/doa_menu"
                 android:layout_width="170dp"
                 android:layout_height="170dp"
                 android:layout_margin="10dp"
@@ -104,6 +106,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/zikir_menu"
                 android:layout_width="170dp"
                 android:layout_height="170dp"
                 android:layout_margin="10dp"
@@ -137,6 +140,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/tasbih_menu"
                 android:layout_width="170dp"
                 android:layout_height="170dp"
                 android:layout_margin="10dp"
