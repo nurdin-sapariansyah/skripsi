@@ -19,9 +19,6 @@ class ModelSurah : Serializable {
     @SerializedName("type")
     lateinit var type: String
 
-    @SerializedName("audio")
-    lateinit var audio: String
-
     @SerializedName("nomor")
     lateinit var nomor: String
 

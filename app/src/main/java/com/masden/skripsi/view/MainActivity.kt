@@ -7,10 +7,12 @@ import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 import com.masden.skripsi.R
 import com.masden.skripsi.databinding.ActivityMainBinding
+import com.masden.skripsi.view.doa.DoaActivity
 import com.masden.skripsi.view.fragment.HomeFragment
 import com.masden.skripsi.view.fragment.NewsFragment
 import com.masden.skripsi.view.fragment.ProfileFragment
 import com.masden.skripsi.view.quran.QuranActivity
+import com.masden.skripsi.view.tasbih.TasbihActivity
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding : ActivityMainBinding
@@ -23,12 +25,17 @@ class MainActivity : AppCompatActivity() {
 
         val cardview1 : CardView = findViewById(R.id.quran_menu)
         val cardview2 : CardView = findViewById(R.id.doa_menu)
+        val cardview3 : CardView = findViewById(R.id.tasbih_menu)
         cardview1.setOnClickListener{
             var i = Intent(this, QuranActivity::class.java)
             startActivity(i)
         }
         cardview2.setOnClickListener{
             var i = Intent(this, DoaActivity::class.java)
+            startActivity(i)
+        }
+        cardview3.setOnClickListener{
+            var i = Intent(this, TasbihActivity::class.java)
             startActivity(i)
         }
 

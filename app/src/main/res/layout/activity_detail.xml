@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/cream"
     tools:context=".view.quran.DetailActivity">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -11,14 +12,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:elevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            app:navigationIcon="@drawable/ic_arrow">
+            android:background="@color/cream">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -29,7 +31,7 @@
                     android:id="@+id/tvHeader"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/teal_200"
+                    android:textColor="@color/teal_700"
                     android:textSize="24sp"
                     android:textStyle="bold" />
 
@@ -42,8 +44,11 @@
     <androidx.core.widget.NestedScrollView
         android:id="@+id/nestedScrollView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -60,7 +65,8 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@drawable/home">
+                    android:id="@+id/rl_image"
+                    android:background="@drawable/mujahidin">
 
                     <TextView
                         android:id="@+id/tvTitle"
@@ -125,19 +131,10 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="start|center_vertical"
                         android:text="Keterangan"
-                        android:textColor="@color/teal_200"
+                        android:textColor="@color/teal_700"
                         android:textIsSelectable="true"
                         android:textSize="18sp"
                         android:textStyle="bold" />
-
-                    <ImageView
-                        android:id="@+id/headerIndicator"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="end|center_vertical"
-                        android:adjustViewBounds="true"
-                        app:srcCompat="@drawable/home"
-                        app:tint="@color/teal_200" />
 
                     <TextView
                         android:id="@+id/tvKet"
@@ -167,34 +164,5 @@
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
-
-    <FrameLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|center|end"
-        app:layout_constraintEnd_toEndOf="@+id/nestedScrollView"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fabStop"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:contentDescription="Stop"
-            android:src="@drawable/ic_stop"
-            app:backgroundTint="@color/teal_200"
-            app:elevation="4dp" />
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fabPlay"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:contentDescription="Play"
-            android:src="@drawable/ic_play"
-            app:backgroundTint="@color/teal_200"
-            app:elevation="4dp" />
-
-    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

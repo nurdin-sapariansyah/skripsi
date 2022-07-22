@@ -5,9 +5,12 @@
     <string name="profile">Profil</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="my_dashboard">Masjid al Mujahidin Selong</string>
-    <string name="idea">Al Quran</string>
-    <string name="suggestion">Doa</string>
-    <string name="medical">Tasbiih</string>
-    <string name="career"><![CDATA[Zikir Pagi & Petang]]></string>
+    <string name="my_dashboard">Masjid Agung Al-Mujahidin Selong</string>
+    <string name="quran">Al Quran</string>
+    <string name="doa">Doa</string>
+    <string name="tasbih">Tasbih</string>
+    <string name="zikir"><![CDATA[Zikir Pagi & Petang]]></string>
+    <string name="masjid">Masjid Agung Al-Mujahidin Selong</string>
+    <string name="kalimat">Lombok Timur, Nusa Tenggara Barat</string>
+    <string name="terjemahan">Terjemahan</string>
 </resources>

@@ -11,17 +11,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SkripsiMasjid">
-        <activity android:name=".view.quran.DetailActivity"></activity>
-        <activity android:name=".view.DoaActivity" />
-        <activity android:name=".view.quran.QuranActivity" />
-        <activity
-            android:name=".view.MainActivity"
-            android:exported="true">
+        <activity android:name=".view.SplashscreenActivity" android:exported="true" android:theme="@style/Theme.splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".view.tasbih.TasbihActivity" />
+        <activity android:name=".view.quran.DetailActivity" android:theme="@style/Theme.splash"/>
+        <activity android:name=".view.doa.DoaActivity"/>
+        <activity android:name=".view.quran.QuranActivity" android:theme="@style/Theme.quran"/>
+        <activity
+            android:name=".view.MainActivity">
         </activity>
 
         <meta-data

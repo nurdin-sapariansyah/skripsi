@@ -2,6 +2,8 @@ package com.masden.skripsi.view.quran
 
 import android.annotation.SuppressLint
 import android.app.ProgressDialog
+import android.graphics.RenderEffect
+import android.graphics.Shader
 import android.media.AudioManager
 import android.media.MediaPlayer
 import android.os.Build
@@ -31,7 +33,6 @@ class DetailActivity : AppCompatActivity() {
     lateinit var strType: String
     lateinit var strAyat: String
     lateinit var strKeterangan: String
-    lateinit var strAudio: String
     lateinit var modelSurah: ModelSurah
     lateinit var ayatAdapter: AyatAdapter
     lateinit var progressDialog: ProgressDialog
@@ -62,11 +63,7 @@ class DetailActivity : AppCompatActivity() {
             strArti = modelSurah.arti
             strType = modelSurah.type
             strAyat = modelSurah.ayat
-            strAudio = modelSurah.audio
             strKeterangan = modelSurah.keterangan
-
-            fabStop.visibility = View.GONE
-            fabPlay.visibility = View.VISIBLE
 
             //Set text
             tvHeader.text = strNama
@@ -77,28 +74,6 @@ class DetailActivity : AppCompatActivity() {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) tvKet.text =
                 Html.fromHtml(strKeterangan, Html.FROM_HTML_MODE_COMPACT) else {
                 tvKet.text = Html.fromHtml(strKeterangan)
-            }
-
-            val mediaPlayer = MediaPlayer()
-
-            fabPlay.setOnClickListener {
-                try {
-                    mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC)
-                    mediaPlayer.setDataSource(strAudio)
-                    mediaPlayer.prepare()
-                    mediaPlayer.start()
-                } catch (e: IOException) {
-                    e.printStackTrace()
-                }
-                fabPlay.visibility = View.GONE
-                fabStop.visibility = View.VISIBLE
-            }
-
-            fabStop.setOnClickListener {
-                mediaPlayer.stop()
-                mediaPlayer.reset()
-                fabPlay.visibility = View.VISIBLE
-                fabStop.visibility = View.GONE
             }
         }
 
