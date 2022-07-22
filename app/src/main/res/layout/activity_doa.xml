@@ -3,39 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/teal"
+    android:background="@color/teal_700"
     android:fitsSystemWindows="true">
 
     <include
         android:id="@+id/toolbar"
-        layout="@layout/toolbar" />
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="220dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_margin="10dp"
-        app:cardCornerRadius="20dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:orientation="horizontal">
-
-            <SearchView
-                android:id="@+id/searchDoa"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:iconifiedByDefault="false"
-                android:paddingStart="-10dp"
-                android:queryHint="Mau cari doa apa?"
-                android:searchIcon="@drawable/home"
-                android:theme="@style/SearchView"
-                app:queryBackground="@android:color/transparent" />
-
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
+        layout="@layout/toolbar2" />
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
@@ -43,7 +16,7 @@
         android:layout_below="@+id/toolbar"
         android:layout_marginTop="20dp"
 
-        android:background="@drawable/home">
+        android:background="@drawable/bg_rounded">
 
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"

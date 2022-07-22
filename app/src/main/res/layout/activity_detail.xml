@@ -31,7 +31,7 @@
                     android:id="@+id/tvHeader"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/teal_700"
+                    android:textColor="@color/teal"
                     android:textSize="24sp"
                     android:textStyle="bold" />
 
@@ -65,8 +65,14 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:id="@+id/rl_image"
                     android:background="@drawable/mujahidin">
+
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/gradient_bg"
+                        android:scaleType="center"
+                        tools:ignore="ContentDescription" />
 
                     <TextView
                         android:id="@+id/tvTitle"
@@ -94,7 +100,7 @@
                         android:layout_width="100dp"
                         android:layout_height="1dp"
                         android:layout_below="@id/tvSubTitle"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginStart="10dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"
                         android:background="@android:color/white" />
@@ -104,7 +110,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/viewDivider"
-                        android:layout_marginStart="40dp"
+                        android:layout_marginStart="10dp"
                         android:textAllCaps="true"
                         android:textColor="@android:color/white"
                         android:textSize="12sp" />
@@ -131,7 +137,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="start|center_vertical"
                         android:text="Keterangan"
-                        android:textColor="@color/teal_700"
+                        android:textColor="@color/teal"
                         android:textIsSelectable="true"
                         android:textSize="18sp"
                         android:textStyle="bold" />

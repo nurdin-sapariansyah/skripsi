@@ -10,7 +10,7 @@ class TasbihActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R .layout.activity_tasbih)
 
-        btn_hitung.setOnClickListener{
+        cv_hitung.setOnClickListener{
             text_zikir.text = (text_zikir.text.toString().toInt()+1).toString()
         }
         btn_reset.setOnClickListener{

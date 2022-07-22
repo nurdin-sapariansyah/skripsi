@@ -22,12 +22,12 @@ import java.util.*
 
 class DoaActivity : AppCompatActivity() {
 
-    lateinit var adapterDoa: AdapterDoa
+    var adapterDoa: AdapterDoa? = null
     var modelDoa: MutableList<ModelDoa> = ArrayList()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_doa)
 
         rvListDoa.setLayoutManager(LinearLayoutManager(this))
         rvListDoa.setHasFixedSize(true)
@@ -63,19 +63,6 @@ class DoaActivity : AppCompatActivity() {
                 e.printStackTrace()
             }
         } catch (ignored: IOException) {
-        }
-    }
-
-    companion object {
-        fun setWindowFlag(activity: Activity, bits: Int, on: Boolean) {
-            val window = activity.window
-            val layoutParams = window.attributes
-            if (on) {
-                layoutParams.flags = layoutParams.flags or bits
-            } else {
-                layoutParams.flags = layoutParams.flags and bits.inv()
-            }
-            window.attributes = layoutParams
         }
     }
 

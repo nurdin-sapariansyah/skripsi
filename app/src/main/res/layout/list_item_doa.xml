@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
     app:cardCornerRadius="10dp"
+    android:backgroundTint="@color/cream"
     app:cardElevation="4dp"
     app:contentPadding="10dp">
 
@@ -16,7 +18,7 @@
             android:id="@+id/relativeRow"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="@drawable/home">
+            android:background="@drawable/bg_nomor_green">
 
             <TextView
                 android:id="@+id/tvId"
@@ -49,14 +51,6 @@
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
-                <ImageView
-                    android:id="@+id/headerIndicator"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="end|center_vertical"
-                    android:adjustViewBounds="true"
-                    app:srcCompat="@drawable/home"
-                    app:tint="@color/teal_700" />
 
                 <LinearLayout
                     android:layout_width="match_parent"

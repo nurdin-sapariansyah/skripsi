@@ -82,7 +82,4 @@ class AdapterDoa(private val modelBacaan: MutableList<ModelDoa>) :
             tvTerjemahan = itemView.tvTerjemahan
         }
     }
-
-
-
 }

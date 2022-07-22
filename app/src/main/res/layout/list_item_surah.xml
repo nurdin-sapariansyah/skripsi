@@ -76,7 +76,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="Arab"
-                    android:textColor="@color/teal_700"
+                    android:textColor="@color/teal"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
