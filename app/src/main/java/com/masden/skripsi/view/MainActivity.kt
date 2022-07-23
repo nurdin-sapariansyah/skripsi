@@ -9,10 +9,11 @@ import com.masden.skripsi.R
 import com.masden.skripsi.databinding.ActivityMainBinding
 import com.masden.skripsi.view.doa.DoaActivity
 import com.masden.skripsi.view.fragment.HomeFragment
-import com.masden.skripsi.view.fragment.NewsFragment
+import com.masden.skripsi.view.fragment.JadwalFragment
 import com.masden.skripsi.view.fragment.ProfileFragment
 import com.masden.skripsi.view.quran.QuranActivity
 import com.masden.skripsi.view.tasbih.TasbihActivity
+import com.masden.skripsi.view.zikir.ZikirActivity
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding : ActivityMainBinding
@@ -26,6 +27,7 @@ class MainActivity : AppCompatActivity() {
         val cardview1 : CardView = findViewById(R.id.quran_menu)
         val cardview2 : CardView = findViewById(R.id.doa_menu)
         val cardview3 : CardView = findViewById(R.id.tasbih_menu)
+        val cardview4 : CardView = findViewById(R.id.zikir_menu)
         cardview1.setOnClickListener{
             var i = Intent(this, QuranActivity::class.java)
             startActivity(i)
@@ -38,11 +40,15 @@ class MainActivity : AppCompatActivity() {
             var i = Intent(this, TasbihActivity::class.java)
             startActivity(i)
         }
+        cardview4.setOnClickListener{
+            var i = Intent(this, ZikirActivity::class.java)
+            startActivity(i)
+        }
 
         binding.bottomNavigation.setOnItemSelectedListener {
             when(it.itemId){
                 R.id.home -> replaceFragment(HomeFragment())
-                R.id.news_info -> replaceFragment(NewsFragment())
+                R.id.news_info -> replaceFragment(JadwalFragment())
                 R.id.profile -> replaceFragment(ProfileFragment())
             }
             true

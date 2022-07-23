@@ -1,20 +1,24 @@
-package com.masden.skripsi.view.doa.adapter
+package com.masden.skripsi.view.zikir.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Filter
-import android.widget.Filterable
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.masden.skripsi.R
-import com.masden.skripsi.data.doa.ModelDoa
-import kotlinx.android.synthetic.main.list_item_doa.view.*
+import com.masden.skripsi.data.zikir.ModelZikir
+import kotlinx.android.synthetic.main.list_item_zikir.view.*
+import kotlinx.android.synthetic.main.list_item_zikir.view.tvArabic
+import kotlinx.android.synthetic.main.list_item_zikir.view.tvId
+import kotlinx.android.synthetic.main.list_item_zikir.view.tvLatin
+import kotlinx.android.synthetic.main.list_item_zikir.view.tvTerjemahan
+import java.util.*
+import kotlin.collections.ArrayList
 
-class AdapterDoa(private val modelBacaan: MutableList<ModelDoa>) :
-    RecyclerView.Adapter<AdapterDoa.ListViewHolder>() {
+class AdapterZikir(private val modelBacaan: MutableList<ModelZikir>) :
+    RecyclerView.Adapter<AdapterZikir.ListViewHolder>() {
 
-    private val modelBacaanListFull: List<ModelDoa>
+    private val modelBacaanListFull: List<ModelZikir>
 
     init {
         modelBacaanListFull = ArrayList(modelBacaan)
@@ -37,7 +41,7 @@ class AdapterDoa(private val modelBacaan: MutableList<ModelDoa>) :
     }
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, i: Int): ListViewHolder {
-        val view = LayoutInflater.from(viewGroup.context).inflate(R.layout.list_item_doa, viewGroup, false)
+        val view = LayoutInflater.from(viewGroup.context).inflate(R.layout.list_item_zikir, viewGroup, false)
         return ListViewHolder(view)
     }
 

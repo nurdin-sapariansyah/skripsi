@@ -1,17 +1,28 @@
 <resources>
     <string name="app_name">Skripsi Masjid</string>
     <string name="home">Beranda</string>
-    <string name="news_info">Info Terbaru</string>
+    <string name="news_info">Jadwal Sholat</string>
     <string name="profile">Profil</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="my_dashboard">Masjid Agung Al-Mujahidin Selong</string>
     <string name="quran">Al Quran</string>
-    <string name="doa">Doa</string>
+    <string name="doa">Doa Sehari-hari</string>
     <string name="tasbih">Tasbih</string>
-    <string name="zikir"><![CDATA[Zikir Pagi & Petang]]></string>
+    <string name="zikir"><![CDATA[Dzikir Setelah Sholat]]></string>
     <string name="masjid">Masjid Agung Al-Mujahidin Selong</string>
     <string name="kalimat">Lombok Timur, Nusa Tenggara Barat</string>
     <string name="terjemahan">Terjemahan</string>
     <string name="kalimat_doa">Kumpulan Doa Sehari-hari</string>
+    <string name="hadits">"Sesungguhnya Allah tidak menerima amal perbuatan kecuali dilakukan dengan ikhlas dan mengharapkan ridha-Nya"</string>
+    <string name="h_r_abu_dawud">H.R Abu Dawud</string>
+    <string name="alamat">: Jl. TGKH. Zainuddin Abdul Madjid, Selong, Lombok Timur, Nusa Tenggara Barat</string>
+    <string name="id">: 288</string>
+    <string name="tipe">: MASJID NEGARA</string>
+    <string name="luas_tanah">: 1,2 ha</string>
+    <string name="status_tanah">: SHM</string>
+    <string name="luas_bangunan">: 1540 m2</string>
+    <string name="tahun_Berdiri">: 1957</string>
+    <string name="fasilitas">: Parkir, Taman, Tempat Penitipan Sepatu/Sandal, Koperasi, Perpustakaan, Kantor Sekretariat, Kamar Mandi/WC, Tempat Wudhu, Sarana Ibadah</string>
+    <string name="kegiatan">: Pemberdayaan Zakat, Infaq, Shodaqoh dan Wakaf, Menyelenggarakan kegiatan sosial ekonomi (koperasi masjid), Menyelenggarakan Dakwah Islam/Tabliq Akbar, Menyelenggarakan Hari Besar Islam, Menyelenggarakan Sholat Jumat, Menyelenggarakan Ibadah Sholat Fardhu</string>
 </resources>
