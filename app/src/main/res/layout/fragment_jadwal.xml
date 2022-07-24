@@ -40,10 +40,10 @@
                 android:background="@drawable/appbar_background"
                 android:gravity="center">
 
-<!--                <Spinner-->
-<!--                    android:id="@+id/spinKota"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="50dp" />-->
+                <Spinner
+                    android:id="@+id/spinKota"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
 
             </RelativeLayout>
 
