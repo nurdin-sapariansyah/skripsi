@@ -10,10 +10,12 @@ import com.masden.skripsi.databinding.ActivityMainBinding
 import com.masden.skripsi.view.doa.DoaActivity
 import com.masden.skripsi.view.fragment.HomeFragment
 import com.masden.skripsi.view.fragment.JadwalFragment
+import com.masden.skripsi.view.fragment.JadwalFragment.Companion.newInstance
 import com.masden.skripsi.view.fragment.ProfileFragment
 import com.masden.skripsi.view.quran.QuranActivity
 import com.masden.skripsi.view.tasbih.TasbihActivity
 import com.masden.skripsi.view.zikir.ZikirActivity
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding : ActivityMainBinding
@@ -43,6 +45,13 @@ class MainActivity : AppCompatActivity() {
         cardview4.setOnClickListener{
             var i = Intent(this, ZikirActivity::class.java)
             startActivity(i)
+        }
+
+        val jadwalSholat = newInstance("Jadwal Sholat")
+        layoutTime.setOnClickListener {
+            jadwalSholat.show(
+                supportFragmentManager, jadwalSholat.tag
+            )
         }
 
         binding.bottomNavigation.setOnItemSelectedListener {

@@ -91,23 +91,23 @@ class JadwalFragment : BottomSheetDialogFragment() {
         }
 
         //show date time
-//        val datePickerTimeline: DatePickerTimeline = rootView.findViewById(R.id.dateTimeline)
-//        val date = Calendar.getInstance()
-//        val mYear: Int = date.get(Calendar.YEAR)
-//        val mMonth: Int = date.get(Calendar.MONTH)
-//        val mDay: Int = date.get(Calendar.DAY_OF_MONTH)
-//
-//        datePickerTimeline.setInitialDate(mYear, mMonth, mDay)
-//        datePickerTimeline.setDisabledDateColor(
-//            ContextCompat.getColor(
-//                requireActivity(),
-//                R.color.teal_700
-//            )
-//        )
-//        datePickerTimeline.setActiveDate(date)
-//
-//        val dates = arrayOf(Calendar.getInstance().time)
-//        datePickerTimeline.deactivateDates(dates)
+        val datePickerTimeline: DatePickerTimeline = rootView.findViewById(R.id.dateTimeline)
+        val date = Calendar.getInstance()
+        val mYear: Int = date.get(Calendar.YEAR)
+        val mMonth: Int = date.get(Calendar.MONTH)
+        val mDay: Int = date.get(Calendar.DAY_OF_MONTH)
+
+        datePickerTimeline.setInitialDate(mYear, mMonth, mDay)
+        datePickerTimeline.setDisabledDateColor(
+            ContextCompat.getColor(
+                requireActivity(),
+                R.color.teal_700
+            )
+        )
+        datePickerTimeline.setActiveDate(date)
+
+        val dates = arrayOf(Calendar.getInstance().time)
+        datePickerTimeline.deactivateDates(dates)
 
         //get data kota
         getDataKota()

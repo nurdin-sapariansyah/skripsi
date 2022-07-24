@@ -54,15 +54,15 @@
                 android:layout_margin="10dp"
                 android:orientation="vertical">
 
-<!--                <com.vivekkaushik.datepicker.DatePickerTimeline-->
-<!--                    android:id="@+id/dateTimeline"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:background="@drawable/bg_circle_radius_primary"-->
-<!--                    android:backgroundTint="@color/colorPrimary"-->
-<!--                    app:dateTextColor="@android:color/white"-->
-<!--                    app:dayTextColor="@android:color/white"-->
-<!--                    app:monthTextColor="@android:color/white" />-->
+                <com.vivekkaushik.datepicker.DatePickerTimeline
+                    android:id="@+id/dateTimeline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_circle_radius_primary"
+                    android:backgroundTint="@color/colorPrimary"
+                    app:dateTextColor="@android:color/white"
+                    app:dayTextColor="@android:color/white"
+                    app:monthTextColor="@android:color/white" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
