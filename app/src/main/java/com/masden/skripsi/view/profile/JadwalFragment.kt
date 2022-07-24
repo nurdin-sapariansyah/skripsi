@@ -1,4 +1,4 @@
-package com.masden.skripsi.view.fragment
+package com.masden.skripsi.view.profile
 
 import android.app.ProgressDialog
 import android.graphics.Color
@@ -10,7 +10,6 @@ import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Spinner
-import androidx.core.content.ContextCompat
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.masden.skripsi.R
 import com.masden.skripsi.view.jadwal.ClientAsyncTask
@@ -91,23 +90,23 @@ class JadwalFragment : BottomSheetDialogFragment() {
         }
 
         //show date time
-        val datePickerTimeline: DatePickerTimeline = rootView.findViewById(R.id.dateTimeline)
-        val date = Calendar.getInstance()
-        val mYear: Int = date.get(Calendar.YEAR)
-        val mMonth: Int = date.get(Calendar.MONTH)
-        val mDay: Int = date.get(Calendar.DAY_OF_MONTH)
-
-        datePickerTimeline.setInitialDate(mYear, mMonth, mDay)
-        datePickerTimeline.setDisabledDateColor(
-            ContextCompat.getColor(
-                requireActivity(),
-                R.color.teal_700
-            )
-        )
-        datePickerTimeline.setActiveDate(date)
-
-        val dates = arrayOf(Calendar.getInstance().time)
-        datePickerTimeline.deactivateDates(dates)
+//        val datePickerTimeline: DatePickerTimeline = rootView.findViewById(R.id.dateTimeline)
+//        val date = Calendar.getInstance()
+//        val mYear: Int = date.get(Calendar.YEAR)
+//        val mMonth: Int = date.get(Calendar.MONTH)
+//        val mDay: Int = date.get(Calendar.DAY_OF_MONTH)
+//
+//        datePickerTimeline.setInitialDate(mYear, mMonth, mDay)
+//        datePickerTimeline.setDisabledDateColor(
+//            ContextCompat.getColor(
+//                requireActivity(),
+//                R.color.teal_700
+//            )
+//        )
+//        datePickerTimeline.setActiveDate(date)
+//
+//        val dates = arrayOf(Calendar.getInstance().time)
+//        datePickerTimeline.deactivateDates(dates)
 
         //get data kota
         getDataKota()

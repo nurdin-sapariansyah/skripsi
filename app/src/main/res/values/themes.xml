@@ -28,10 +28,10 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="Theme.splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.profile" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/teal</item>
-        <item name="colorPrimaryVariant">@color/teal</item>
+        <item name="colorPrimary">@color/cream_500</item>
+        <item name="colorPrimaryVariant">@color/cream_500</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_700</item>

@@ -25,7 +25,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
                 android:text="Jadwal Sholat"
-                android:textColor="@color/teal_700"
+                android:textColor="@color/teal"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -37,13 +37,13 @@
                 android:layout_marginLeft="25dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="25dp"
-                android:background="@drawable/home"
+                android:background="@drawable/appbar_background"
                 android:gravity="center">
 
-                <Spinner
-                    android:id="@+id/spinKota"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp" />
+<!--                <Spinner-->
+<!--                    android:id="@+id/spinKota"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="50dp" />-->
 
             </RelativeLayout>
 
@@ -54,15 +54,15 @@
                 android:layout_margin="10dp"
                 android:orientation="vertical">
 
-                <com.vivekkaushik.datepicker.DatePickerTimeline
-                    android:id="@+id/dateTimeline"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/bg_circle_radius_primary"
-                    android:backgroundTint="@color/colorPrimary"
-                    app:dateTextColor="@android:color/white"
-                    app:dayTextColor="@android:color/white"
-                    app:monthTextColor="@android:color/white" />
+<!--                <com.vivekkaushik.datepicker.DatePickerTimeline-->
+<!--                    android:id="@+id/dateTimeline"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="@drawable/bg_circle_radius_primary"-->
+<!--                    android:backgroundTint="@color/colorPrimary"-->
+<!--                    app:dateTextColor="@android:color/white"-->
+<!--                    app:dayTextColor="@android:color/white"-->
+<!--                    app:monthTextColor="@android:color/white" />-->
 
                 <RelativeLayout
                     android:layout_width="match_parent"

@@ -1,8 +1,7 @@
 package com.masden.skripsi.view.jadwal
 
-import android.content.Context
 import android.os.AsyncTask
-import com.masden.skripsi.view.fragment.JadwalFragment
+import com.masden.skripsi.view.profile.JadwalFragment
 import java.io.BufferedReader
 import java.io.InputStream
 import java.io.InputStreamReader

@@ -4,14 +4,11 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.cardview.widget.CardView
-import androidx.fragment.app.Fragment
 import com.masden.skripsi.R
 import com.masden.skripsi.databinding.ActivityMainBinding
 import com.masden.skripsi.view.doa.DoaActivity
-import com.masden.skripsi.view.fragment.HomeFragment
-import com.masden.skripsi.view.fragment.JadwalFragment
-import com.masden.skripsi.view.fragment.JadwalFragment.Companion.newInstance
-import com.masden.skripsi.view.fragment.ProfileFragment
+import com.masden.skripsi.view.profile.JadwalFragment.Companion.newInstance
+import com.masden.skripsi.view.profile.ProfileActivity
 import com.masden.skripsi.view.quran.QuranActivity
 import com.masden.skripsi.view.tasbih.TasbihActivity
 import com.masden.skripsi.view.zikir.ZikirActivity
@@ -24,12 +21,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        replaceFragment(HomeFragment())
 
         val cardview1 : CardView = findViewById(R.id.quran_menu)
         val cardview2 : CardView = findViewById(R.id.doa_menu)
         val cardview3 : CardView = findViewById(R.id.tasbih_menu)
         val cardview4 : CardView = findViewById(R.id.zikir_menu)
+        val cardview5 : CardView = findViewById(R.id.profile_menu)
+
         cardview1.setOnClickListener{
             var i = Intent(this, QuranActivity::class.java)
             startActivity(i)
@@ -46,6 +44,10 @@ class MainActivity : AppCompatActivity() {
             var i = Intent(this, ZikirActivity::class.java)
             startActivity(i)
         }
+        cardview5.setOnClickListener{
+            var i = Intent(this, ProfileActivity::class.java)
+            startActivity(i)
+        }
 
         val jadwalSholat = newInstance("Jadwal Sholat")
         layoutTime.setOnClickListener {
@@ -53,23 +55,6 @@ class MainActivity : AppCompatActivity() {
                 supportFragmentManager, jadwalSholat.tag
             )
         }
-
-        binding.bottomNavigation.setOnItemSelectedListener {
-            when(it.itemId){
-                R.id.home -> replaceFragment(HomeFragment())
-                R.id.news_info -> replaceFragment(JadwalFragment())
-                R.id.profile -> replaceFragment(ProfileFragment())
-            }
-            true
-        }
-    }
-
-    //Memanggil fragment
-    private fun replaceFragment(fragment : Fragment) {
-        val fragmentManager = supportFragmentManager
-        val fragmentTransaction = fragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.container_fragment, fragment)
-        fragmentTransaction.commit()
     }
 
 }
